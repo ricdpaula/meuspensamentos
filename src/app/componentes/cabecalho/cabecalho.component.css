@@ -1,0 +1,16 @@
+header{
+  background-color: #1d1d1d;
+}
+header h1, p{
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  header h1{
+    font-size: 1rem;
+  }
+  header p{
+    font-size: 0.8rem;
+  }
+}

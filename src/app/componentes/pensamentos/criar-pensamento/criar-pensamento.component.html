@@ -1,0 +1,36 @@
+<div class="container">
+  <form>
+    <label for="conteudo">Conteudo:</label>
+    <textarea type="textarea" name="conteudo" id="conteudo" [(ngModel)]="pensamento.conteudo"></textarea>
+    <label for="autoria">Autoria:</label>
+    <input type="text" name="autoria" id="autoria" [(ngModel)]="pensamento.autoria">
+    <label for="modelo">Modelo:</label>
+    <select name="modelo" id="modelo" [(ngModel)]="pensamento.modelo">
+      <option value="modelo1">Modelo 1</option>
+      <option value="modelo2">Modelo 2</option>
+      <option value="modelo3">Modelo 3</option>
+    </select>
+  </form>
+  <div class="container cards">
+    <div class="card modelo1">
+      <h2>Modelo 1</h2>
+      <p>{{ pensamento.conteudo }}</p>
+      <p><b>{{ pensamento.autoria }}</b></p>
+    </div>
+    <div class="card modelo2">
+      <h2>Modelo 2</h2>
+      <p>{{ pensamento.conteudo }}</p>
+      <p><b>{{ pensamento.autoria }}</b></p>
+    </div>
+    <div class="card modelo3">
+      <h2>Modelo 3</h2>
+      <p>{{ pensamento.conteudo }}</p>
+      <p><b>{{ pensamento.autoria }}</b></p>
+    </div>
+  </div>
+  <div class="acoes">
+    <button class="botao" (click)="criarPensamento()">Criar pensamento</button>
+    <button class="botao" (click)="cancelar()">Cancelar</button>
+  </div>
+
+</div>

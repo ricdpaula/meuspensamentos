@@ -1,0 +1,19 @@
+form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 16px 0px 16px 0px;
+  width: 60%;
+}
+form label{
+  margin: 20px 0px 5px 0px;
+}
+form input, select, textarea{
+  padding: 12px;
+  width: 100%;
+}
+form textarea{
+  resize: none;
+  height: 300px;
+}

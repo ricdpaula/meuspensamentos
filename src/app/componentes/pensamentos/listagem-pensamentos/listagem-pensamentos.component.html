@@ -1,0 +1,14 @@
+<div class="container cards">
+  <div class="card {{cardPensamento.modelo}}" *ngFor="let cardPensamento of listarPensamentos">
+    <p>{{ cardPensamento.conteudo }}</p>
+    <p><b>{{ cardPensamento.autoria }}</b></p>
+    <div class="acoes">
+      <button class="botao" routerLink="/pensamentos/excluir-pensamento/{{cardPensamento.id}}">EXCLUIR</button>
+      <button class="botao" routerLink="/pensamentos/editar-pensamento/{{cardPensamento.id}}">EDITAR</button>
+    </div>
+  </div>
+</div>
+<div class="acoes">
+  <button class="botao" routerLink="/criar-pensamento">Adicionar novos pensamentos</button>
+</div>
+
